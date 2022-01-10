@@ -1,7 +1,7 @@
 # KickStarter Challenge Analysis
 
 ## Overview of Project
-An up and coming playwright, Louise, has reached out for help regarding her Kickstarter campaign project. She wanted to start a crowdfunding campaign to help fund her play, Fever. By utilizing data in Kickstarter tab of the [data-1-1-3-StarterBook](docs/data-1-1-3-StarterBook.xlsx.zip), an initial analysis was created to to provide her with some valuable insight to guide a successful campaign. For background on the initial analysis, please see the [data-1-1-3-StarterBook](docs/data-1-1-3-StarterBook.xlsx.zip) workbook. 
+An up and coming playwright, Louise, has reached out for help regarding her Kickstarter campaign project. She wanted to start a crowdfunding campaign to help fund her play, Fever. By utilizing data in Kickstarter tab of the [data-1-1-3-StarterBook](data-1-1-3-StarterBook.xlsx.zip), an initial analysis was created to to provide her with some valuable insight to guide a successful campaign. For background on the initial analysis, please see the [data-1-1-3-StarterBook](data-1-1-3-StarterBook.xlsx.zip) workbook. 
 
 With the insights from the initial analysis in mind, Louise launched her campaign and she came close to her fundraising goal in a short amount of time. Now, she would like to know how similar campaigns had fared in relation to their launch dates and funding goals. 
 
@@ -26,7 +26,7 @@ The second analysis, Outcomes Based on Goals, will utilize the `COUNTIFS()` func
 This section describes how I performed the analysis of Outcomes Based on Launch Date and Outcomes Based on Goals. This section also describes if any challenges were faced in performing the analysis' and how they were overcome. 
 
 ### Definition of Data Used
-In both analysis', data in the Kickstarter tab of the [Kickstarter_Challenge](path/to/Kickstarter_Challenge.xlsx.zip) workbook were utilized. Below is a brief description of the data used: 
+In both analysis', data in the Kickstarter tab of the [Kickstarter_Challenge](Kickstarter_Challenge.xlsx.zip) workbook were utilized. Below is a brief description of the data used: 
 * Parent Category - the category of campaign (Theater). Columnn Q in the Kickstarter tab. 
 * Subcategory - the subcategory of the campaign (Play). Column R in the Kickstart tab. 
 * Date Created Conversion- the date the campaign launched. Column T in the Kickstarter tab. 
@@ -41,13 +41,13 @@ In both analysis', data in the Kickstarter tab of the [Kickstarter_Challenge](pa
 ### Analysis of Outcomes Based on Launch Date
 To perform the analysis, I created a "Years" column in Column U of the Kickstarter tab and utilized the `Year()` function to extract the year the camapigns launched from the “Date Created Conversion” column. I then created a pivot table with all data in the Kickstarter tab. I put "Outcomes" in Columns, "Date Created Conversion" in Rows and count of "Outcomes" in Values. I also added the option to filter by Parent Category and Years. I then filtered the Parent Category to show only theater campaigns, which is the same Parent Category that Louise's campaign falls under. This ensures we are looking at the outcomes of campaigns that are most relevan to Louise's campaign. I also filtered the column, "Outcomes" to only show the campaigns that were "Successful," "Failed," and "Canceled." We did not want to include "Live" campaigns as the outcomes of these campaigns are not finalzied. I then sorted the "Outcomes" column to show the count of outcomes per month in descending order, such that "Successful" outcomes appeared first, "Failed" showed second and "Cancelled" showed last. The resulting pivot table, seen below, shows how many theater campaigns were "Successful," "Failed," and "Canacelled" based on the month they were launched. 
 
-![Theater_Outcomes_vs_Launch_PivotTable](path/to/Theater_Outcomes_vs_Launch_PivotTable.png)
+![Theater_Outcomes_vs_Launch_PivotTable](Theater_Outcomes_vs_Launch_PivotTable.png)
 
-Please see the Theater Outcomes by Launch Date tab in the [Kickstarter_Challenge](path/to/Kickstarter_Challenge.xlsx.zip) workbook for access to the pivot table. 
+Please see the Theater Outcomes by Launch Date tab in the [Kickstarter_Challenge](Kickstarter_Challenge.xlsx.zip) workbook for access to the pivot table. 
 
 To better visualize the results, I created a line chart from the pivot table to show the relationship between outcomes and launch month.
 
-![Theater_Outcomes_vs_Launch](path/to/Theater_Outcomes_vs_Launch.png)
+![Theater_Outcomes_vs_Launch](Theater_Outcomes_vs_Launch.png)
 
 The months the date launched are on the x-axis, the count of campaigns are on the y-axis. The blue line represents the number of Successful campaigns, the red line represents the number of failed campaigns and the yellow line represents the number of cancelled campaigns. 
  
@@ -81,13 +81,13 @@ Finally, to calculate the percentage of successful, failed and canceled campaign
 
 The resulting table is shown below. 
 
-![Outcomes_vs_Goals_Table](path/to/Outcomes_vs_Goals_Table.png)
+![Outcomes_vs_Goals_Table](Outcomes_vs_Goals_Table.png)
 
-Please see the Outcomes Based on Goals tab in the [Kickstarter_Challenge](path/to/Kickstarter_Challenge.xlsx.zip) workbook for access to the table and for further detail on the `COUNTIFS()` functions utilized in each row and column.
+Please see the Outcomes Based on Goals tab in the [Kickstarter_Challenge](Kickstarter_Challenge.xlsx.zip) workbook for access to the table and for further detail on the `COUNTIFS()` functions utilized in each row and column.
 
 To better visualize the results, I created a line chart from the table to show the relationship between the goal-amount ranges 
 
-![Outcomes_vs_Goals](path/to/Outcomes_vs_Goals.png)
+![Outcomes_vs_Goals](Outcomes_vs_Goals.png)
 
 The goal-amount ranges is shown on the x-axis and the percentage of successful, failed, or canceled projects is on the y-axis. The blue line represents the percentage of campaigns that were successful. The organe line represents the percentage of campaigns that failed. The grey line represents the percentage of campaigns that were canceled. 
 
