@@ -6,7 +6,7 @@ An up and coming playwright, Louise, has reached out for help regarding her Kick
 With the insights from the initial analysis in mind, Louise launched her campaign and she came close to her fundraising goal in a short amount of time. Now, she would like to know how similar campaigns had fared in relation to their launch dates and funding goals. 
 
 ### Purpose
-The purpose of this project is to utilize data in the Kickstarter tab of the [Kickstarter_Challenge](path/to/Kickstarter_Challenge.xlsx.zip) to visualize and analyze the outcomes of similar Kickstarter Campaigns in relation to their launch dates and funding goals (specifically campaigns in the Parent Category, Theater, and campaigns in the Sub Category, Plays). 
+The purpose of this project is to utilize data in the Kickstarter tab of the [Kickstarter_Challenge](path/to/Kickstarter_Challenge.xlsx) to visualize and analyze the outcomes of similar Kickstarter Campaigns in relation to their launch dates and funding goals (specifically campaigns in the Parent Category, Theater, and campaigns in the Sub Category, Plays). 
 
 #### Purpose of Theater Outcomes by Launch Date
 The first analysis, Theater Outcomes By Launch Date, will utilize a pivot table to observe the outcomes for global campaigns in the Parent Category, Theatre, based on the month the campaign was launched. Specifically, it will look at how many theatre campaigns were "Successful," "Failed," and "Canceled" based on the month it was launched. The purpose of this analysis is to see which launch month(s) had the:
